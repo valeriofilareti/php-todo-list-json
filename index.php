@@ -15,7 +15,9 @@
 <body id="app">
   <h1>todolist</h1>
   <div class="container">
-  <h1>x</h1>
+  <h1 v-for="(item, index) in arrayItems">
+    {{ item }}
+  </h1>
   </div>
   <script src="main.js"></script>
 </body>
