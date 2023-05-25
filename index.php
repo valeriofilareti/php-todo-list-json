@@ -21,7 +21,7 @@
         {{ item }}
       </span>
     </div>
-  <input v-model="newTask" @keyup.enter="addTask" type="text"><button>enter</button>
+  <input class="p-1" v-model="newTask" @keyup.enter="addTask" type="text"><button class="p-1 m-1">enter</button>
   </div>
   <script src="main.js"></script>
 </body>

@@ -16,7 +16,7 @@ const { createApp } = Vue;
         })
       },
       addTask(){
-        this.arrayItems.push(this.newTask);
+        this.arrayItems.unshift(this.newTask);
         this.newTask = '';
       }
     },
