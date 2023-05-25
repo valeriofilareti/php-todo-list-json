@@ -1,12 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.container {
-  margin: 100px auto;
-  width: 70%;
-  height: 200px;
-  border: 1px solid black;
+.container > .card {
+  height: 300px;
 }

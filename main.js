@@ -4,7 +4,8 @@ const { createApp } = Vue;
     data() {
       return {
         apiUrl: 'server.php',
-        arrayItems: []
+        arrayItems: [],
+        newTask: ''
       }
     },
     methods: {
@@ -13,6 +14,10 @@ const { createApp } = Vue;
         .then(result => {
           this.arrayItems = result.data
         })
+      },
+      addTask(){
+        this.arrayItems.push(this.newTask);
+        this.newTask = '';
       }
     },
     mounted(){
